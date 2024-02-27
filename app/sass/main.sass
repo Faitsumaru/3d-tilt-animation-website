@@ -58,3 +58,20 @@ a
     min-height: 700px
     overflow: hidden
     position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-image: url(../images/src/russia.svg)
+        background-position: center
+        background-repeat: no-repeat
+        opacity: .02
+        transform: scale(1.35)
+        @media (max-width: 1366px)
+            transform: scale(1)
+        +media-breakpoint-down(sm)
+            display: none
+
