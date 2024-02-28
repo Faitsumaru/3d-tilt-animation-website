@@ -3,10 +3,12 @@
 body
     background-color: #1c1c1c
     font-weight: 300
-    perspective: 1000px
 
 a 
     text-decoration: none
+
+.preserve
+    transform-style: preserve-3d
 
 .text-right
     text-align: right
@@ -23,10 +25,16 @@ a
     .container-fluid
         max-width: 1680px
     .btn
-        +media-breakpoint-up(md)
+        +media-breakpoint-up(sm)
             margin-right: 50px
-        +media-breakpoint-down(sm)
+        +media-breakpoint-down(md)
             margin-right: 10px
+            position: relative
+            right: 5px
+    +media-breakpoint-down(md)
+        position: relative
+        padding: 30px 0
+
     
 .logo
     font-size: 26px
@@ -58,10 +66,13 @@ a
         background-color: darken($accent, 10)
 
 .card-header
+    perspective: 1000px
     height: 100vh
     min-height: 700px
     overflow: hidden
     position: relative
+    +media-breakpoint-down(sm)
+        overflow: visible
     &::before
         content: ''
         position: absolute
@@ -86,7 +97,9 @@ a
     display: flex
     justify-content: center
     align-items: center
-    z-index: 200
+    +media-breakpoint-down(lg)
+        transform-style: flat
+        transform: rotate(0)!important
 
     h1
         font-size: 32px
@@ -108,6 +121,10 @@ a
     font-weight: bold
     font-size: 16px
     display: inline-block
+    +media-breakpoint-down(md)
+        margin-top: 10px
+        margin-bottom: 40px
+
     &:hover
         color: $accent
         text-decoration: solid underline purple 2px
@@ -131,8 +148,18 @@ a
     width: 458px
     height: 288px
     display: inline-block
+    zoom: .9
+
     > img 
         position: absolute
+        +media-breakpoint-down(md)
+            display: none
+    +media-breakpoint-down(md)
+        background-image: url(../images/src/card.png)
+        background-size: cover
+        width: 100%
+        padding-top: 64.3%
+        height: auto
     &-logo_w
         z-index: 12
         top: 45px
@@ -188,3 +215,16 @@ a
         padding-top: 10px
     strong
         font-weight: bold
+
+
+.level--2
+    transform: translateZ(-80px)
+
+.level--1
+    transform: translateZ(-40px)
+
+.level-1
+    transform: translateZ(20px)
+
+.level-2
+    transform: translateZ(50px)
