@@ -11,6 +11,9 @@ a
 .text-right
     text-align: right
 
+.text-center
+    text-align: center
+
 .top-line
     position: absolute
     width: 100%
@@ -122,3 +125,47 @@ a
         line-height: 32px
         text-align: center
         margin-right: 10px
+
+.card
+    position: relative
+    width: 458px
+    height: 288px
+    display: inline-block
+    > img 
+        position: absolute
+    &-logo_w
+        z-index: 12
+        top: 45px
+        right: 45px
+    &-chip
+        z-index: 12
+        top: 70px
+        left: 45px
+    &-number-holder
+        z-index: 12
+        left: 45px
+        top: 158px
+    &-valid
+        z-index: 12
+        top: 194px
+        right: 211px
+    &-russia
+        z-index: 11
+        top: 20px
+        left: 22px
+        width: 420px
+        opacity: .07
+
+.l_main, .l2_main, .l3_main
+    left: 0
+
+.l_main
+    z-index: 10
+.l2_main
+    z-index: 8
+    left: -10px
+    top: 10px
+.l3_main
+    z-index: 6
+    left: -20px
+    top: 20px
