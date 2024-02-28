@@ -1,9 +1,9 @@
 {
 	"name": "optimizedhtml",
 	"version": "5.0.0",
-	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
+	"description": "3D Tilt animation website",
 	"main": "index.js",
-	"author": "WebDesign Master",
+	"author": "Kiryakov Gleb",
 	"type": "module",
 	"browserslist": [
 		"last 10 versions"
