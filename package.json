@@ -25,6 +25,7 @@
 		"browsersync-ssi": "^0.2.4",
 		"cssnano": "^6.0.3",
 		"del": "^7.1.0",
+		"gsap": "^3.12.5",
 		"gulp": "^4.0.2",
 		"gulp-changed": "^5.0.2",
 		"gulp-concat": "^2.6.1",
@@ -43,8 +44,5 @@
 		"terser-webpack-plugin": "^5.3.10",
 		"webpack": "^5.90.0",
 		"webpack-stream": "^7.0.0"
-	},
-	"dependencies": {
-		"gsap": "^3.12.5"
 	}
 }
