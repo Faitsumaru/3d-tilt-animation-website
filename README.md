@@ -11,3 +11,14 @@ Website w/ tilt animation! Just change your cursor position within page.
 <div align="center">
     <img src="app/images/src/preview.jpg" alt="preshow img">
 </div>
+
+## Scripts
+
+Runs the app:
+### `gulp`
+
+Builds the app:
+### `gulp build`
+
+GSAP animation tool:
+### `npm install gsap`
